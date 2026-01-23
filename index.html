@@ -3,47 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jan Kamm - Professional Profile</title>
+  <title>Jan Kamm – Sustainability & Renewable Energy</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --text-main: #1f2933;
+      --text-muted: #6b7280;
+      --accent: #0f766e;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg);
       line-height: 1.6;
-      color: #333;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    header {
+      margin-bottom: 64px;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5em;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 720px;
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 720px;
+      margin-bottom: 16px;
+    }
+
+    .experience-block {
+      margin-bottom: 20px;
+    }
+
+    .experience-title {
+      font-weight: 500;
+    }
+
+    ul {
+      padding-left: 18px;
+      max-width: 720px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .languages span {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.95rem;
     }
 
     a {
-      color: #0066cc;
+      color: var(--accent);
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 64px 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Jan Kamm</h1>
+  <main class="container">
 
-  <p>
-    I am a professional specializing in <strong>project management for wind and solar parks</strong>.
-  </p>
+    <header>
+      <h1>Jan Kamm</h1>
+      <div class="subtitle">
+        Sustainability & Renewable Energy Professional<br>
+        Experience across ESG consulting and large-scale wind and solar projects
+      </div>
+    </header>
 
-  <p>
-    This website provides an overview of my background, experience, and contact information.
-  </p>
+    <section>
+      <h2>Professional Profile</h2>
+      <p>
+        I am a sustainability and renewable energy professional with experience spanning ESG consulting and the development and management of large-scale wind and solar projects.
+      </p>
+      <p>
+        While my background is rooted in strong analytical and technical thinking through an M.Sc. in Physics, my greatest strength lies in communication and collaboration. Over the course of my career, I have consistently worked at the interface between diverse stakeholders, translating complex technical and sustainability-related topics into clear, actionable discussions.
+      </p>
+      <p>
+        After two years in climate change–related ESG consulting at KPMG in Berlin, I deliberately moved into project-oriented roles in the renewable energy sector. In this environment, I particularly enjoyed coordinating multidisciplinary teams, managing stakeholder expectations, and contributing to the concrete delivery of complex infrastructure projects.
+      </p>
+      <p>
+        I am a trained mediator, which has strongly shaped my working style and my approach to conflict resolution, alignment, and decision-making in project settings. I work best in roles that require both structured thinking and a high degree of interpersonal sensitivity.
+      </p>
+      <p>
+        I am currently preparing to relocate to Zurich, Switzerland, and am interested in project-focused roles in the renewable energy sector or related areas of the green economy.
+      </p>
+    </section>
 
-  <p>
-    Contact:
-    <a href="mailto:jan.kamm@protonmail.com">jan.kamm@protonmail.com</a>
-  </p>
+    <section>
+      <h2>Experience Snapshot</h2>
+
+      <div class="experience-block">
+        <div class="experience-title">ESG & Climate Change Consulting — KPMG (Berlin)</div>
+        <p>
+          Work on climate-related ESG topics, supporting organizations in structuring sustainability initiatives and facilitating communication across internal and external stakeholders.
+        </p>
+      </div>
+
+      <div class="experience-block">
+        <div class="experience-title">Renewable Energy Project Development & Management (Berlin)</div>
+        <p>
+          Project management and development roles in large-scale wind and solar projects, with a focus on coordination across technical, regulatory, and commercial interfaces.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Strengths & Working Style</h2>
+      <ul>
+        <li>Strong analytical foundation based on a Master’s degree in Physics</li>
+        <li>Clear and empathetic communication, particularly in complex or conflict-prone situations</li>
+        <li>Proven ability to connect technical experts, decision-makers, and external stakeholders</li>
+        <li>Structured, reliable, and solution-oriented approach to project work</li>
+        <li>Formal training in mediation and conflict resolution</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <div class="languages">
+        <span><strong>English</strong> — near-native (part of childhood spent in New Zealand)</span>
+        <span><strong>German</strong> — native</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        You can reach me via email or connect with me on
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>.
+      </p>
+    </footer>
+
+  </main>
 </body>
 </html>
