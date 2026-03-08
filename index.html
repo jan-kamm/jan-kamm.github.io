@@ -93,6 +93,15 @@ max-width:760px;
 margin-bottom:18px;
 }
 
+ul{
+padding-left:18px;
+max-width:760px;
+}
+
+li{
+margin-bottom:10px;
+}
+
 a{
 color:var(--accent);
 text-decoration:none;
@@ -101,19 +110,6 @@ text-decoration:none;
 a:hover{
 text-decoration:underline;
 color:var(--accent-hover);
-}
-
-/* Profile grid */
-
-.profile-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:8px 30px;
-max-width:760px;
-}
-
-.profile-item{
-margin-bottom:10px;
 }
 
 /* contact */
@@ -152,14 +148,7 @@ footer a:hover{
 color:var(--accent);
 }
 
-/* fallback for small screens */
-
 @media (max-width:700px){
-
-.profile-grid{
-grid-template-columns:1fr;
-}
-
 .container{
 padding:60px 22px;
 }
@@ -167,7 +156,6 @@ padding:60px 22px;
 h1{
 font-size:2.1rem;
 }
-
 }
 
 </style>
@@ -197,19 +185,13 @@ This page provides a short overview of my background, professional experience, a
 
 <h2>Profile at a Glance</h2>
 
-<div class="profile-grid">
-
-<div class="profile-item"><strong>Analytical problem solver:</strong> Physics M.Sc. with strong quantitative and mathematical foundation</div>
-
-<div class="profile-item"><strong>Clear communicator:</strong> State-certified mediator with experience in structured and empathetic communication</div>
-
-<div class="profile-item"><strong>Client-facing consultant:</strong> Stakeholder and client management experience at KPMG</div>
-
-<div class="profile-item"><strong>Project developer:</strong> Delivered large-scale solar farm development projects at Verbund</div>
-
-<div class="profile-item"><strong>Entrepreneurial initiative:</strong> Founded a beach volleyball community with 1,000+ members</div>
-
-</div>
+<ul>
+<li><strong>Analytical problem solver:</strong> Physics M.Sc. with a strong quantitative and mathematical foundation</li>
+<li><strong>Clear communicator:</strong> State-certified mediator with experience in structured and empathetic communication</li>
+<li><strong>Client-facing consultant:</strong> Stakeholder and client management experience at KPMG</li>
+<li><strong>Project developer:</strong> Delivered large-scale solar farm development projects at Verbund</li>
+<li><strong>Entrepreneurial initiative:</strong> Founded a beach volleyball community with 1,000+ members</li>
+</ul>
 
 </section>
 
