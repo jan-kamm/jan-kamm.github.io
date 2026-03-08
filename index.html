@@ -31,40 +31,40 @@ margin:0;
 font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
 color:var(--text-main);
 background:var(--bg);
-line-height:1.65;
+line-height:1.7;
 -webkit-font-smoothing:antialiased;
 }
 
 .container{
-max-width:860px;
+max-width:980px;
 margin:0 auto;
-padding:80px 24px;
+padding:70px 28px;
 }
 
 header{
-margin-bottom:72px;
+margin-bottom:60px;
 text-align:center;
 }
 
 .profile-photo{
-width:140px;
-height:140px;
+width:150px;
+height:150px;
 object-fit:cover;
 border-radius:50%;
 margin-bottom:24px;
 }
 
 h1{
-font-size:2.5rem;
+font-size:2.6rem;
 font-weight:600;
 margin-bottom:12px;
 letter-spacing:-0.02em;
 }
 
 .subtitle{
-font-size:1.1rem;
+font-size:1.15rem;
 color:var(--text-muted);
-max-width:620px;
+max-width:700px;
 margin:0 auto;
 }
 
@@ -72,34 +72,25 @@ margin:0 auto;
 margin-top:18px;
 font-size:0.95rem;
 color:var(--text-muted);
-max-width:620px;
+max-width:680px;
 margin-left:auto;
 margin-right:auto;
 }
 
 section{
-margin-bottom:60px;
+margin-bottom:50px;
 }
 
 h2{
-font-size:1.35rem;
+font-size:1.4rem;
 font-weight:500;
 margin-bottom:20px;
 letter-spacing:-0.01em;
 }
 
 p{
-max-width:720px;
+max-width:760px;
 margin-bottom:18px;
-}
-
-ul{
-padding-left:18px;
-max-width:720px;
-}
-
-li{
-margin-bottom:10px;
 }
 
 a{
@@ -112,19 +103,36 @@ text-decoration:underline;
 color:var(--accent-hover);
 }
 
+/* Profile grid */
+
+.profile-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px 30px;
+max-width:760px;
+}
+
+.profile-item{
+margin-bottom:10px;
+}
+
+/* contact */
+
 .contact{
-max-width:720px;
+max-width:760px;
 }
 
 .cv-note{
 font-size:0.9rem;
 color:var(--text-muted);
-margin-top:28px;
+margin-top:26px;
 }
 
+/* footer */
+
 footer{
-margin-top:80px;
-padding-top:26px;
+margin-top:70px;
+padding-top:22px;
 border-top:1px solid #e5e7eb;
 font-size:0.95rem;
 color:var(--text-muted);
@@ -144,13 +152,21 @@ footer a:hover{
 color:var(--accent);
 }
 
-@media (max-width:600px){
+/* fallback for small screens */
 
-.container{padding:64px 20px;}
+@media (max-width:700px){
 
-h1{font-size:2rem;}
+.profile-grid{
+grid-template-columns:1fr;
+}
 
-.subtitle{font-size:1.05rem;}
+.container{
+padding:60px 22px;
+}
+
+h1{
+font-size:2.1rem;
+}
 
 }
 
@@ -172,7 +188,7 @@ Physics graduate, former consultant at KPMG, and renewable energy project develo
 </div>
 
 <p class="intro">
-This page provides a brief overview of my background, professional experience, and plans for the next step in my career.
+This page provides a short overview of my background, professional experience, and plans for the next step in my career.
 </p>
 
 </header>
@@ -181,19 +197,19 @@ This page provides a brief overview of my background, professional experience, a
 
 <h2>Profile at a Glance</h2>
 
-<ul>
+<div class="profile-grid">
 
-<li><strong>Analytical problem solver:</strong> Physics M.Sc. with strong quantitative and mathematical training</li>
+<div class="profile-item"><strong>Analytical problem solver:</strong> Physics M.Sc. with strong quantitative training</div>
 
-<li><strong>Clear communicator:</strong> State-certified mediator trained in structured and empathetic communication</li>
+<div class="profile-item"><strong>Clear communicator:</strong> State-certified mediator trained in structured communication</div>
 
-<li><strong>Client-facing consultant:</strong> Experience managing stakeholder relationships and expectations at KPMG</li>
+<div class="profile-item"><strong>Client-facing consultant:</strong> Stakeholder and client management experience at KPMG</div>
 
-<li><strong>Project developer:</strong> Delivered large-scale solar farm development projects at Verbund</li>
+<div class="profile-item"><strong>Project developer:</strong> Delivered large-scale solar farm development projects at Verbund</div>
 
-<li><strong>Entrepreneurial initiative:</strong> Founded and operate a beach volleyball community with over 1,000 members</li>
+<div class="profile-item"><strong>Entrepreneurial initiative:</strong> Founded a beach volleyball community with 1,000+ members</div>
 
-</ul>
+</div>
 
 </section>
 
@@ -202,37 +218,32 @@ This page provides a brief overview of my background, professional experience, a
 <h2>Professional Background</h2>
 
 <p>
-After completing my studies, I began my professional career as an ESG consultant at 
-<a href="https://kpmg.com/de/de.html" target="_blank" rel="noopener noreferrer"><strong>KPMG Germany</strong></a>. 
+After completing my studies, I began my professional career as an ESG consultant at
+<a href="https://kpmg.com/de/de.html" target="_blank" rel="noopener noreferrer"><strong>KPMG Germany</strong></a>.
 Our team supported banks in adapting traditional risk models to incorporate emerging climate and environmental risks.
-The learning curve was steep, and over the course of two years I gained significant confidence working with senior clients.
 </p>
 
 <p>
 Consulting often meant demanding timelines and complex projects. This environment taught me to remain calm under pressure
-and to manage expectations carefully. When a presentation required more preparation time than initially planned, it was important
-to communicate the reasons clearly and ensure that clients remained well supported.
+and to manage expectations carefully while communicating transparently with clients.
 </p>
 
 <p>
 Over time, I developed a desire to see the impact of my work more directly. I therefore transitioned into a project development
 and management role in the renewable energy sector at
-<a href="https://www.verbund.com/de" target="_blank" rel="noopener noreferrer"><strong>Verbund</strong></a>,
-Austria's largest electricity producer.
+<a href="https://www.verbund.com/de" target="_blank" rel="noopener noreferrer"><strong>Verbund</strong></a>.
 </p>
 
 <p>
 At Verbund I worked on large-scale solar projects and particularly valued the variety of tasks involved: coordinating
-multidisciplinary teams, staying up to date on legislative and technical developments, and engaging regularly with stakeholders.
-The role significantly strengthened my ability to structure projects and manage priorities. I also learned to move away from
-a slightly perfectionistic mindset and instead focus on what matters most in complex projects: <strong>prioritization</strong>.
+multidisciplinary teams, following regulatory developments, and engaging regularly with stakeholders.
+The role significantly strengthened my ability to structure projects and manage priorities.
 </p>
 
 <p>
 Outside my formal roles, I founded and grew a
 <a href="https://wonderl.ink/@berlinbeachvibes" target="_blank" rel="noopener noreferrer">beach volleyball community</a>
-from a small group of around 20 people into a network of more than 1,000 participants. The project provided valuable
-experience in organization, entrepreneurship, and business administration.
+from around 20 people into a network of more than 1,000 participants.
 </p>
 
 </section>
@@ -257,26 +268,19 @@ I particularly enjoy roles that combine analytical work with collaboration acros
 <h2>The Next Chapter: Zurich</h2>
 
 <p>
-Originally from Munich, I have always felt a strong connection to the Alpine region. My years in Berlin have been a wonderful
-experience that I am very grateful for, but I increasingly feel drawn back toward the mountains and closer to nature.
-Through visits to Switzerland and close friends living in Zurich, I have come to appreciate the region greatly.
+Originally from Munich, I have always felt a strong connection to the Alpine region. While my years in Berlin have been a wonderful experience,
+I increasingly feel drawn back toward the mountains and closer to nature.
 </p>
 
 <p>
-I am therefore looking to begin my next professional chapter in Zurich or the surrounding area.
-Having spent five childhood years in New Zealand and having traveled extensively across different continents,
-I am comfortable adapting to new environments and cultures.
+Through visits to Switzerland and close friends living in Zurich, I have come to appreciate the region greatly and would like
+to begin my next professional chapter there.
 </p>
 
 <p>
-At the moment I am taking a short break traveling through Latin America and working on converting my van into a camper van.
-This gives me flexibility regarding the start date of my next role, although ideally I would begin between
-<strong>01.06.2026 and 01.07.2026</strong>. I will return home from my travels on
-<strong>19.03.2026</strong> and will be available for in-person interviews from that time onward.
-</p>
-
-<p>
-If you believe my background could be a good fit for your team, I would be very happy to hear from you.
+I am currently taking a short break traveling through Latin America and converting my van into a camper van.
+This gives me flexibility regarding the start date of my next role, ideally between <strong>01.06.2026 and 01.07.2026</strong>.
+I will return from my travels on <strong>19.03.2026</strong> and will be available for in-person interviews from that time onward.
 </p>
 
 </section>
@@ -286,10 +290,12 @@ If you believe my background could be a good fit for your team, I would be very 
 <h2>Contact</h2>
 
 <div class="contact">
+
 You can reach me via email at
 <a href="mailto:jan.kamm@protonmail.com">jan.kamm@protonmail.com</a>
 or connect with me on
 <a href="https://www.linkedin.com/in/jankamm" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+
 </div>
 
 <p class="cv-note">
@@ -305,8 +311,7 @@ Last updated: March 2026
 </div>
 
 <p>
-<a href="/impressum.html">Impressum</a>
-&nbsp;·&nbsp;
+<a href="/impressum.html">Impressum</a> ·
 <a href="/datenschutz.html">Datenschutz</a>
 </p>
 
